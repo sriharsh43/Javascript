@@ -1,0 +1,80 @@
+/* Apply a consistent box-sizing model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the body to center content and set default font */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #212121 /* Default background color */
+  }
+  
+  /* Style the navigation bar */
+  nav {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  /* Style the main heading */
+  h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the color buttons */
+  .button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid #333;
+  }
+  
+  /* Define specific colors for each button */
+  #blue {
+    background-color: lightskyblue;
+  }
+  
+  #pink {
+    background-color: lightpink;
+  }
+  
+  #green {
+    background-color: green;
+  }
+  
+  #grey {
+    background-color: grey;
+  }
+  
+  /* Style the subheading */
+  h2 {
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  h2 span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
