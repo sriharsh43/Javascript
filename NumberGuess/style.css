@@ -1,0 +1,80 @@
+/* styles.css */
+body {
+  background-color: #212121;
+  background-image: url("https://img.freepik.com/free-photo/set-office-supplies_144627-22521.jpg?t=st=1737637499~exp=1737641099~hmac=a77d5c0b65a0ca03992584e6f078aaef2af78a2705dfc240b22496a2a45980a6&w=996");
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#wrapper {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #424242;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1 {
+  color: #ffeb3b;
+}
+
+.form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: calc(100% - 20px);
+}
+
+.form input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color:white;
+  color: #212121;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form input[type="submit"]:hover {
+  background-color: cyan;  
+}
+
+.resultParas p {
+  margin: 10px 0;
+}
+
+.resultParas span {
+  font-weight: bold;
+}
+
+.lowOrHi {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
