@@ -1,0 +1,89 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  background-image: url("https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg");
+  color: #fff;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #fff;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  border-radius: 8px; /* Round the corners */
+}
+
+nav a {
+  color: #212121;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5em 1em; /* Add padding for clickable area */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+nav a:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: #212121; /* Add background color on hover */
+  border-radius: 5px; /* Round the corners on hover */
+}
+
+nav a[aria-current="page"] {
+  border-bottom: 2px solid #212121;
+}
+
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 2em;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.project-link {
+  display: block;
+  padding: 1em 2em;
+  background-color: #444;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-size: 1.1rem;
+}
+
+.project-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  padding: 1em;
+  text-align: center;
+  margin-top: 2em;
+  color: #bbb;
+  font-size: 0.9rem;
+}
