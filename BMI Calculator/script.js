@@ -11,7 +11,7 @@ function calculateBMI() {
   const weight = parseFloat(weightInput.value);
 
   if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
-    resultsDiv.textContent = "Please enter valid height and weight values.";
+    resultsDiv.textContent = "Please enter valid height / weight values.";
     resultsDiv.style.color = "red";
     return;
   }
