@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drink Water Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f8ff;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .glass {
+      width: 100px;
+      height: 200px;
+      border: 5px solid #0077be;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      background-color: #e0f7fa;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .glass:hover {
+      transform: scale(1.1);
+    }
+
+    .water {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      background: linear-gradient(180deg, #00bfff, #0077be);
+      animation: wave 2s infinite;
+    }
+
+    
+
+    .label {
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-weight: bold;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .label.green {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="glass" id="glass1">
+      <div class="water" id="water1"></div>
+      <div class="label" id="label1">Glass 1</div>
+    </div>
+    <div class="glass" id="glass2">
+      <div class="water" id="water2"></div>
+      <div class="label" id="label2">Glass 2</div>
+    </div>
+    <div class="glass" id="glass3">
+      <div class="water" id="water3"></div>
+      <div class="label" id="label3">Glass 3</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
