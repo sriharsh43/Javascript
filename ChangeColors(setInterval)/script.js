@@ -3,11 +3,11 @@ const randomColor = function () {
     const hex = '0123456789ABCDEF' //hex values from 0-16
     let color = '#' //append the color to it
     for (let i = 0; i <6; i++) {
-       color += hex[Math.floor(Math.random() * 16)]    
+       color += hex[Math.floor(Math.random() * 16)]  //loop to generate random color  
     }
     return color
 }
-let intervalID;
+let intervalID //global declaration
 const startChangingColor = function () {
     if (!intervalID) {
         intervalID = setInterval(changeBGColor,500)
@@ -23,6 +23,4 @@ const stopChangingColor = function () {
     
 }
 document.getElementById('start').addEventListener('click',startChangingColor)
-
-
 document.getElementById('stop').addEventListener('click',stopChangingColor)
